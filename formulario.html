@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Meu Site Pessoal</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Apresentação</a></li>
+        <li><a href="Aula5.html">O que eu gosto</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="video.html">Vídeo</a></li>
+        <li><a href="formulario.html">Formulário</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Quer aprender? Me chama e faça um PIX para eu te ajudar 😄</h2>
+
+    <form action="#" method="post">
+      <table>
+        <tr>
+          <td><label for="nome">Nome:</label></td>
+          <td><input type="text" id="nome" name="nome" required></td>
+        </tr>
+        <tr>
+          <td><label for="cpf">CPF:</label></td>
+          <td><input type="text" id="cpf" name="cpf" required></td>
+        </tr>
+        <tr>
+          <td><label for="telefone">Telefone:</label></td>
+          <td><input type="tel" id="telefone" name="telefone" required></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td><input type="email" id="email" name="email" required></td>
+        </tr>
+        <tr>
+          <td><label for="interesse">O que quer aprender:</label></td>
+          <td>
+            <select id="interesse" name="interesse">
+              <option value="javascript">JavaScript</option>
+              <option value="html">HTML</option>
+              <option value="css">CSS</option>
+              <option value="sql">SQL</option>
+              <option value="python">Python</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+      <br>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpar">
+    </form>
+  </main>
+  <footer>
+    <p>&copy; 2025 - Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>
