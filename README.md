@@ -20,11 +20,7 @@ portfolio-site
 ├── README.md             # Documentação do projeto
 ```
 
-## Instalação
 
-1. Clone o repositório:
-   ```
-   git clone homepessoal
    ```
 2. Navegue até o diretório do projeto:
    ```
