@@ -4,86 +4,81 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio - Gustavo Martins</title>
-  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
-  <script src="../js/main.js"></script>
+  <script src="main.js"></script>
 </head>
-<body class="bg-gray-100 font-sans">
-
-  <nav id="navbar" class="fixed top-0 w-full bg-white py-4 z-10">
-    <div class="container mx-auto flex justify-between items-center px-4">
-      <h1 class="text-2xl font-bold text-blue-600">Gustavo Martins</h1>
-      <div class="space-x-4">
-        <a href="#home" class="text-gray-600 hover:text-blue-600">Início</a>
-        <a href="#projects" class="text-gray-600 hover:text-blue-600">Projetos</a>
-        <a href="#contact" class="text-gray-600 hover:text-blue-600">Contato</a>
+<body>
+  <nav id="navbar">
+    <div class="container">
+      <h1>Gustavo Martins</h1>
+      <div class="nav-links">
+        <a href="#home">Início</a>
+        <a href="#projects">Projetos</a>
+        <a href="#contact">Contato</a>
       </div>
     </div>
   </nav>
 
-
-  <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
-    <div class="container mx-auto px-4 text-center">
-      <h1 class="text-5xl font-bold mb-4">Bem-vindo ao meu Portfólio</h1>
-      <p class="text-xl mb-6">Sou Gustavo Martins, desenvolvedor e técnico em informática, apaixonado por tecnologia e soluções inovadoras.</p>
-      <a href="#projects" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-blue-100">Conheça meus projetos</a>
+  <section id="home">
+    <div class="container home-content">
+      <h1>Bem-vindo ao meu Portfólio</h1>
+      <p>Sou Gustavo Martins, desenvolvedor e técnico em informática, apaixonado por tecnologia e soluções inovadoras.</p>
+      <a href="#projects" class="btn">Conheça meus projetos</a>
     </div>
   </section>
 
-  <section id="projects" class="py-16 bg-white">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-12">Meus Projetos</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+  <section id="projects">
+    <div class="container">
+      <h2>Meus Projetos</h2>
+      <div class="projects-grid">
 
-        <div class="project-card bg-gray-100 p-6 rounded-lg">
-          <h3 class="text-xl font-semibold mb-2">Criação de Chatbot com JavaScript</h3>
-          <p class="text-gray-600 mb-4">Desenvolvi um chatbot interativo utilizando JavaScript, capaz de responder perguntas frequentes e guiar usuários em processos automatizados. O projeto focou em UX e integração com APIs externas.</p>
-          <a href="/portfolio-site/chatbot/chatbot.html" class="text-blue-600 hover:underline">Saiba mais</a>
+        <div class="project-card">
+          <h3>Criação de Chatbot com JavaScript</h3>
+          <p>Desenvolvi um chatbot interativo utilizando JavaScript, capaz de responder perguntas frequentes e guiar usuários em processos automatizados. O projeto focou em UX e integração com APIs externas.</p>
+          <a href="/portfolio-site/chatbot/chatbot.html">Saiba mais</a>
         </div>
 
-        <div class="project-card bg-gray-100 p-6 rounded-lg">
-          <h3 class="text-xl font-semibold mb-2">Atendimento Inicial como SDR</h3>
-          <p class="text-gray-600 mb-4">Atuei desenvolvendo um chatbot inicial com a ferramenta do CRM Kommo o SallesBot.</p>
-          <a href="#" class="text-blue-600 hover:underline">Saiba mais</a>
+        <div class="project-card">
+          <h3>Atendimento Inicial como SDR</h3>
+          <p>Atuei desenvolvendo um chatbot inicial com a ferramenta do CRM Kommo o SallesBot.</p>
+          <a href="#">Saiba mais</a>
         </div>
 
-        <div class="project-card bg-gray-100 p-6 rounded-lg">
-          <h3 class="text-xl font-semibold mb-2">Criação de API para Banco de Dados</h3>
-          <p class="text-gray-600 mb-4">Projetei e implementei uma API para acesso seguro e eficiente a bancos de dados, utilizando REST e otimizando consultas para alta performance.</p>
-         <a href="#" class="text-blue-600 hover:underline">Saiba mais</a>
+        <div class="project-card">
+          <h3>Criação de API para Banco de Dados</h3>
+          <p>Projetei e implementei uma API para acesso seguro e eficiente a bancos de dados, utilizando REST e otimizando consultas para alta performance.</p>
+          <a href="#">Saiba mais</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Seção de Contato -->
-  <section id="contact" class="py-16 bg-gray-100">
-    <div class="container mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold mb-12">Entre em Contato</h2>
-      <div class="flex justify-center space-x-6">
-        <a href="https://www.instagram.com/gustavo_s.m.r/" target="_blank" class="social-link text-gray-600">
-          <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.332.014 7.052.072 3.668.227 1.981 1.97 1.826 5.354c-.058 1.281-.072 1.689-.072 4.948s.014 3.668.072 4.948c.155 3.384 1.898 5.071 5.282 5.226 1.28.058 1.689.072 4.948.072s3.668-.014 4.948-.072c3.384-.155 5.071-1.842 5.226-5.226.058-1.28.072-1.689.072-4.948s-.014-3.668-.072-4.948c-.155-3.384-1.842-5.071-5.226-5.226C15.668.014 15.259 0 12 0z"/><path d="M12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a3.999 3.999 0 110-7.998 3.999 3.999 0 010 7.998zM18.406 4.594a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/></svg>
+  <section id="contact">
+    <div class="container contact-content">
+      <h2>Entre em Contato</h2>
+      <div class="social-links">
+        <a href="https://www.instagram.com/gustavo_s.m.r/" target="_blank" class="social-link">
+          <!-- SVG Instagram -->
           Instagram
         </a>
-        <a href="https://www.linkedin.com/in/gustavo-da-silva-martins-429b8331a/" target="_blank" class="social-link text-gray-600">
-          <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
+        <a href="https://www.linkedin.com/in/gustavo-da-silva-martins-429b8331a/" target="_blank" class="social-link">
+          <!-- SVG LinkedIn -->
           LinkedIn
         </a>
-        <a href="https://wa.me/5511967530707" target="_blank" class="social-link text-gray-600">
-          <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M20.52 3.48A12 12 0 0 0 12 0C5.37 0 0 5.37 0 12a11.93 11.93 0 0 0 1.64 6.06L0 24l6.22-1.63A11.94 11.94 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.19-1.24-6.19-3.48-8.52zM12 22a9.93 9.93 0 0 1-5.09-1.39l-.36-.21-3.69.97.99-3.6-.23-.37A9.93 9.93 0 0 1 2 12c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10zm5.2-7.8c-.28-.14-1.65-.81-1.9-.9-.25-.09-.43-.14-.61.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.44-2.25-1.41-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.12-.12.28-.32.42-.48.14-.16.18-.28.28-.46.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.47-.16-.01-.34-.01-.52-.01s-.48.07-.73.34c-.25.28-.97.95-.97 2.32 0 1.37.99 2.7 1.13 2.89.14.18 1.95 2.98 4.73 4.06.66.28 1.18.45 1.58.58.66.21 1.26.18 1.73.11.53-.08 1.65-.67 1.88-1.32.23-.65.23-1.2.16-1.32-.07-.12-.25-.18-.53-.32z"/></svg>
+        <a href="https://wa.me/5511967530707" target="_blank" class="social-link">
+          <!-- SVG WhatsApp -->
           WhatsApp
         </a>
-        <a href="mailto:gustavoflautist@gmail.com" class="social-link text-gray-600">
-          <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2v.01L12 13 4 6.01V6h16zm0 12H4V8l8 5 8-5v10z"/></svg>
+        <a href="mailto:gustavoflautist@gmail.com" class="social-link">
+          <!-- SVG Email -->
           gustavoflautist@gmail.com
         </a>
       </div>
     </div>
   </section>
 
-  <footer class="bg-gray-800 text-white py-4 text-center">
+  <footer>
     <p>&copy; 2025 Gustavo Martins. Todos os direitos reservados.</p>
   </footer>
-
 </body>
 </html>
