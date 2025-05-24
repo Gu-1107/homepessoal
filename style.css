@@ -1,43 +1,73 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-  }
-  
-  header {
-    background-color: #ff9900;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin: 0 15px;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  
-  footer {
-    background-color: #ff9900;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-  }
-  
+/* Cartão de projetos */
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Links sociais */
+.social-link {
+  transition: transform 0.3s ease, color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+.social-link:hover {
+  transform: scale(1.1);
+  background-color: #3b82f6;
+  color: white;
+}
+.social-link:active {
+  transform: scale(0.95);
+}
+
+/* Navbar fixa */
+#navbar {
+  transition: background-color 0.3s ease;
+}
+#navbar.scrolled {
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Chatbot */
+.chat-container {
+  max-height: 500px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+.message {
+  transition: all 0.3s ease;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1rem;
+  max-width: 80%;
+}
+.user-message {
+  background-color: #3b82f6;
+  color: white;
+  margin-left: auto;
+}
+.bot-message {
+  background-color: #e5e7eb;
+  color: #1f2937;
+}
+.input-container {
+  transition: box-shadow 0.3s ease;
+}
+.input-container:focus-within {
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+}
+.send-button {
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+.send-button:hover {
+  transform: scale(1.05);
+  background-color: #2563eb;
+}
+.send-button:active {
+  transform: scale(0.95);
+}

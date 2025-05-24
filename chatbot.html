@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot - Gustavo Martins</title>
+  <style>
+    .chat-container {
+      max-height: 500px;
+      overflow-y: auto;
+      scroll-behavior: smooth;
+    }
+    .message {
+      transition: all 0.3s ease;
+      margin-bottom: 1rem;
+      padding: 0.75rem 1.5rem;
+      border-radius: 1rem;
+      max-width: 80%;
+    }
+    .user-message {
+      background-color: #3b82f6;
+      color: white;
+      margin-left: auto;
+    }
+    .bot-message {
+      background-color: #e5e7eb;
+      color: #1f2937;
+    }
+    .input-container {
+      transition: box-shadow 0.3s ease;
+    }
+    .input-container:focus-within {
+      box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+    }
+    .send-button {
+      transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+    .send-button:hover {
+      transform: scale(1.05);
+      background-color: #2563eb;
+    }
+    .send-button:active {
+      transform: scale(0.95);
+    }
+    #navbar {
+      transition: background-color 0.3s ease;
+    }
+    #navbar.scrolled {
+      background-color: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+  <script src="../js/main.js"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <nav id="navbar" class="fixed top-0 w-full bg-white py-4 z-10">
+    <div class="container mx-auto flex justify-between items-center px-4">
+      <h1 class="text-2xl font-bold text-blue-600">Gustavo Martins</h1>
+      <div class="space-x-4">
+        <a href="/portfolio-site/index/index.html" class="text-gray-600 hover:text-blue-600">Voltar ao Portfólio</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-indigo-600">
+    <div class="container mx-auto px-4 py-8">
+      <div class="bg-white rounded-lg shadow-lg p-6 max-w-2xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-6 text-gray-800">Converse com Meu Chatbot</h2>
+        <p class="text-center text-gray-600 mb-6">Experimente o chatbot que desenvolvi! Faça perguntas sobre mim ou meus projetos.</p>
+
+        <div class="chat-container bg-gray-100 p-4 rounded-lg mb-4" id="chatBox">
+          <div class="bot-message">Olá! Sou o chatbot criado por Gustavo. Como posso ajudar você? Tente perguntar sobre meus projetos ou sobre o Gustavo!</div>
+        </div>
+
+        <div class="input-container flex gap-2">
+          <input type="text" id="userInput" placeholder="Digite sua mensagem..." class="flex-1 p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <button id="sendButton" class="send-button bg-blue-500 text-white px-4 py-3 rounded-lg">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-800 text-white py-4 text-center">
+    <p>© 2025 Gustavo Martins. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
